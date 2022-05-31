@@ -11,7 +11,7 @@
 - Font awesome
 
 ## Live Demo
-[localhost:3000](https://localhost:3000)
+[rwanda-events.netlify.app](https://rwanda-events.netlify.app/)
 
 ## Getting Started
 To get a local copy open and running follow these simple example steps.
