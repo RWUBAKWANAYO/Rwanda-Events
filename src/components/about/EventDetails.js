@@ -30,7 +30,7 @@ class EventDetails extends Component {
         
     }
     componentDidMount(){
-        
+        window.scrollTo(0,0)
     }
     backClick = ()=>{
         this.setState({TICKET:true, NORMAL:false, VIP:false, Vvip:false,MTN:false,AIRTEL:false,
