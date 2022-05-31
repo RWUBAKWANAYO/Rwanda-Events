@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom';
 import badge from "../images/eventsImg/badge.png";
 import event1 from "../images/eventsImg/event1.png";
 import event2 from "../images/eventsImg/event2.png";
@@ -76,7 +77,7 @@ export class EventCards extends Component {
         </div>
         <div className="eventWrapperDiv">
           {data.map((el) => (
-            <div className="event-img-wrapper">
+            <Link to="./EventDetails" className="event-img-wrapper">
               <div className="eventPic-cont">
                 <img src={el.image} alt="" />
               </div>
@@ -88,14 +89,14 @@ export class EventCards extends Component {
                   <div className="event-text-wrapper1-sub">
                     <label>{el.date}</label>
                     {el.available === true ? (
-                      <a href="/eventDetails" style={{ color: "#0BDA51" }}> Available</a>
+                      <a href="./EventDetails" style={{ color: "#0BDA51" }}> Available</a>
                     ) : (
-                      <a href="/eventDetails" style={{ color: "#EC0000" }}>Sold out</a>
+                      <a href="./EventDetails" style={{ color: "#EC0000" }}>Sold out</a>
                     )}
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </>
